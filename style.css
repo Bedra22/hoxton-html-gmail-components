@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template:
+      'header header ' auto
+      'left-menu emails ' 1fr /
+      180px 1fr ;
+  }
+  
+  /* HEADER SECTION */
+  
+  .header {
+    grid-area: header;
+  
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 3rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  button {
+    background: none;
+    border: none;
+  }
+  
+  .header button span {
+    font-size: 1.2rem;
+    color: rgb(71, 71, 71);
+  }
+  
+
+  
+  .headerleft {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  
+  
+  .headersearch {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+  
+  .search-side {
+    background-color: #f0f3f4;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    color: rgb(142, 142, 142);
+  }
+  
+  .headersearch-icon {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .headersearch-icon span {
+    font-size: 1.2rem;
+  }
+  
+  .headersearchbar {
+    border: none;
+    background-color: #f0f3f4;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+ 
+  
+  .headersearchexpand {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .headersearchexpand span {
+    font-size: 1.2rem;
+  }
+  
+ 
+  
+  .headerright {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  
+  .headerrightprofile {
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    padding: 2px 5px;
+  }
+  
+  .headerrightprofile .container {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 0.5rem;
+  }
+  
+  .headerrightprofile .name {
+    font-size: 0.8rem;
+  }
+    
+  .leftbar {
+    grid-area: left-menu;
+    background-color:antiquewhite;
+    padding: 20px;
+  
+}
+  .sidebarcomposer{
+      margin: 15px;
+      text-transform: capitalize;
+      color: grey;
+      padding: 15px;
+      border-radius: 20px;
+      background-color: azure;
+      display: flex;
+      align-items: center;
+      box-shadow: 0px 3px 5px 3px rgba(0, gre0en, 0, 0.75) ;
+    }
+  .sidebaroptions{
+      display: flex;
+      text-align: center;
+      height: 40px;
+      cursor: pointer;
+      padding: 0 5px;
+     color: rgb(82, 82, 82);
+  }
+  
+  .gmail-logo {
+    width: 60px;
+  }
+  
+  .emailbar {
+    grid-area: emails;
+    background-color:bisque;
+    flex: 1;
+    overflow: scroll;
+
+  }
+  
+  .emaillistsettings{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    padding: 10px;
+    z-index: 999;
+    cursor: pointer;
+
+}
+  .section{
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    color: gray;
+    background-color: beige;
+}
+  .emailsettingsbar{
+      position: sticky;
+      display: flex;
+      z-index: 999;
+      
+      
+  }
+  .emailist{
+    position: sticky;
+      display: flex;
+      z-index: 999;
+    
+}
+  .emailistoption{
+      display: flex;
+      align-items: center;
+  }
+  .emaillistinfo{
+      display: flex;
+      flex: 0.8;
+      align-items: center;
+  }
+  
+  
+  .emailbar{
+      flex: 1;
+      overflow: scroll;
+  }
+ 
+
+
